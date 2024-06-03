@@ -1,0 +1,15 @@
+*.tgz 
+.github
+.notes
+.prettier
+.prettier*
+.vscode
+/coverage
+/images
+/node_modules
+/src
+CHANGELOG.md
+esbuild.*
+jest.config.js
+tsconfig.json
+tslint.json
