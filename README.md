@@ -68,11 +68,12 @@ with `?`.
 
 ### Complex `git` workflow
 
-It's difficult to remember how to do anything in `git` because
-git is capable of doing everything. With Invoker, you can focus on your
+With Invoker, you can focus on your
 workflow and less on memorizing commands and flags.
 
 ![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/8.gif?raw=true)
+
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/14.png?raw=true)
 
 ### Miscellaneous
 
@@ -89,14 +90,19 @@ new commands along the way.
 
 ![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/6.gif?raw=true)
 
-Invoker continues to surprise me as to what it's capable of.
+Invoker's use cases are inummerable. You can automate the most trivial of tasks with
+very little effort.
 
 ![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/13.png?raw=true)
 
-#### Warning
+## ⚠️ Warning
 
 If you're not careful, Invoker can destroy your computer entirely.
 
-Use _extra_ caution when executing any commands with side effects.
+**Never** use Invoker with `sudo`.
+
+Use **extra caution** when executing any commands with side effects.
 
 Make sure to prefix input with `?` as neccessary.
+
+Use at your own risk.
