@@ -2,7 +2,7 @@
 
 Execute bash commands using natural language.
 
-![img](images/9.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/9.gif?raw=true)
 
 #### Features
 
@@ -28,7 +28,7 @@ Search this directory for a package.json that contains the text "@prmichaelsen"
 
 Invoker will then construct a command designed to execute your intent, as demonstrated below.
 
-![img](images/4.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/4.gif?raw=true)
 
 ## Installation & Setup
 
@@ -57,14 +57,14 @@ invoker
 
 ### Hello World
 
-![img](images/3.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/3.gif?raw=true)
 
 ### Command confirmation
 
 Invoker supports command confirmation by prefixing your input
 with `?`.
 
-![img](images/5.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/5.gif?raw=true)
 
 ### Complex `git` workflow
 
@@ -72,7 +72,7 @@ It's difficult to remember how to do anything in `git` because
 git is capable of doing everything. With Invoker, you can focus on your
 workflow and less on memorizing commands and flags.
 
-![img](images/8.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/8.gif?raw=true)
 
 ### Miscellaneous
 
@@ -81,17 +81,17 @@ have to run, such as `lsof -i`. It's not a difficult command to
 remember, but if you only use it every few months, you'll find yourself
 looking it up each time you need to use it.
 
-![img](images/7.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/7.gif?raw=true)
 
 Invoker is a great learning tool as well. It enables beginners
 to effectively use the command line while also picking up
 new commands along the way.
 
-![img](images/6.gif)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/6.gif?raw=true)
 
 Invoker continues to surprise me as to what it's capable of.
 
-![img](images/13.png)
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/13.png?raw=true)
 
 #### Warning
 

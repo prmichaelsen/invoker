@@ -3,3 +3,5 @@
 - `invoker` starts an interactive terminal emulator which accepts natural language
   as input and executes a command that implements the intent of the input.
 - Prefix input with `?` to enable confirmation before command execution.
+
+### [v0.0.1] chore: Update images in README.md to point to github hosted images
