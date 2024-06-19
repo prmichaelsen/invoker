@@ -24,3 +24,5 @@ invoker "colorize package.json" | zsh
   "name": "@prmichaelsen/invoker"
 }
 ```
+
+### [v0.1.1] docs: Update README.md with an example that generates a grep command that excludes specified directories
