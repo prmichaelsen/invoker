@@ -31,3 +31,27 @@ invoker "colorize package.json" | zsh
 
 Prior to this change, any env vars loaded via your bash profile or 
 otherwise were not propagated to the subshell.
+
+### [v0.3.0] feat: Use ? from the command line to prompt before executing
+
+Prior to this change, one could use `invoker "say hi"` to output something like
+`echo hi` to the terminal. If you wanted to run the command without copying & pasting,
+one could pipe this to a shell process with `invoker "say hi" | sh`.
+However this method does not allow you to confirm what the command will be
+before executing. 
+
+In `v0.3.0`, you can now use invoker like so:
+
+```sh
+invoker "? say hi"
+```
+
+Invoker will then output the command to be run along with
+a confirmation message before running it
+
+```sh
+echo hi (y/N)
+```
+
+This allows you to preview commands invoked from the command line
+before running them without having to use an interactive session.

@@ -49,8 +49,41 @@ If you aren't authenticated and authorized, Invoker will throw an error during u
 
 #### Usage
 
+##### Interactive Mode
 ```sh
 invoker
+Say Hi
+echo Hi
+Hi
+```
+
+Prompt to confirm before running:
+```sh
+invoker
+? Say Hi
+echo Hi (y/N)
+y
+Hi
+```
+
+#### Command Line Mode
+```sh
+invoker "Say Hi"
+echo Hi
+```
+
+Pipe output:
+```sh
+invoker "Say Hi" | sh
+Hi
+```
+
+Prompt to confirm before running:
+```sh
+invoker "? Say Hi"
+echo Hi (y/N)
+y
+Hi
 ```
 
 ## Demos
