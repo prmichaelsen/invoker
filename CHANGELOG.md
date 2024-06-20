@@ -26,3 +26,8 @@ invoker "colorize package.json" | zsh
 ```
 
 ### [v0.1.1] docs: Update README.md with an example that generates a grep command that excludes specified directories
+
+### [v0.2.0] feat: Interactive session now propagates process env variables to the child sub-shell.
+
+Prior to this change, any env vars loaded via your bash profile or 
+otherwise were not propagated to the subshell.

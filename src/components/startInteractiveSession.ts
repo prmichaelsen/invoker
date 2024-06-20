@@ -14,7 +14,7 @@ export const startInteractiveSession = () => {
     input: process.stdin,
     output: process.stdout,
   });
-  const ps = spawn("sh");
+  const ps = spawn("sh", { env: process.env });
   ps.stdout?.pipe(process.stdout);
   ps.stderr?.pipe(process.stderr);
   const inputStream = new Readable({
