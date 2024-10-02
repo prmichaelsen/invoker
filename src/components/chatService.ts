@@ -32,7 +32,10 @@ export const chatService = async (input: ChatServiceInput) => {
   const openBackTicksIdx = completion.indexOf(backTicks);
   const closeBackTicksIdx = completion.lastIndexOf(backTicks);
   if (openBackTicksIdx > -1 && closeBackTicksIdx > -1) {
-    return completion.substring(openBackTicksIdx + backTicks.length, closeBackTicksIdx).trim();
+    return completion
+      .substring(openBackTicksIdx + backTicks.length, closeBackTicksIdx)
+      .split('\n').slice(1).join('\n')
+      .trim();
   } else {
     return completion;
   }
