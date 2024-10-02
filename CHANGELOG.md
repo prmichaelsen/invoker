@@ -60,3 +60,5 @@ before running them without having to use an interactive session.
 #### [v0.3.1] build: npm publish lifecycle improvements
 * `publish` fails if git index is dirty
 * `prepublishOnly` cleans dist and node_modules and performs a fresh install of dependencies
+
+#### [v0.3.2] build: Ensure package.json version matches latest changelog version
