@@ -9,7 +9,7 @@ import { spawn } from "node:child_process";
 const colorPrompt = chalk.bold.whiteBright;
 const colorCommand = chalk.bold.greenBright;
 
-export const runOnce = (input: string) => {
+export const runOnce = (input: string, force = false) => {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -23,7 +23,7 @@ export const runOnce = (input: string) => {
       let isPromptToConfirmCommand = false;
       if (text.startsWith("?")) {
         isPromptToConfirmCommand = true;
-        text = text.substring(2);
+        text = text.substring(1);
       }
       const conversation = [createPrompt(text), "Assistant: "];
       const response = await chatService({

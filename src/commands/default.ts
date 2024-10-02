@@ -1,18 +1,33 @@
 import { cli } from "../cli";
 import { printCommand } from "../components/printCommand";
 import { runOnce } from "../components/runOnce";
+import { runForce } from "../components/runForce";
 import { startInteractiveSession } from "../components/startInteractiveSession";
 
-cli.command<{
+interface Options {
   input?: string;
-}>(
+  force?: boolean;
+  silent?: boolean;
+}
+cli.command<Options>(
   "$0 [input]",
   "",
-  () => {},
+  (yargs) => {
+    yargs.option("force", {
+      type: "boolean",
+      alias: "f",
+    });
+    yargs.option("silent", {
+      type: "boolean",
+      alias: "s",
+    });
+  },
   async (argv) => {
-    const { input } = argv;
+    const { input, force = false, silent = false } = argv;
     if (input) {
-      if (input.startsWith("?")) {
+      if (force) {
+        runForce(input, silent);
+      } else if (input.startsWith("?")) {
         runOnce(input);
       } else {
         await printCommand(input);

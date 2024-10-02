@@ -64,3 +64,5 @@ before running them without having to use an interactive session.
 #### [v0.3.2] build: Ensure package.json version matches latest changelog version
 
 #### [v0.3.3] chore: Fix dependencies
+
+#### [v0.4.0] feat: force flag for immediate execution, silent flag to print output of command only

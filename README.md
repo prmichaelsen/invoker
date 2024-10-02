@@ -11,6 +11,8 @@ Execute bash commands using natural language.
 - `invoker` starts an interactive terminal emulator which accepts natural language
   as input and executes a command that implements the intent of the input.
 - Prefix input with `?` to enable confirmation before command execution.
+- `invoker -f <input>` to execute immediately
+- `invoker -fs <input>` to execute immediately and only output command results
 
 #### Why use Invoker?
 
