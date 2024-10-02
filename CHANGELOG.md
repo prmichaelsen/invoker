@@ -62,3 +62,5 @@ before running them without having to use an interactive session.
 * `prepublishOnly` cleans dist and node_modules and performs a fresh install of dependencies
 
 #### [v0.3.2] build: Ensure package.json version matches latest changelog version
+
+#### [v0.3.3] chore: Fix dependencies
