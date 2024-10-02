@@ -68,3 +68,5 @@ before running them without having to use an interactive session.
 #### [v0.4.0] feat: force flag for immediate execution, silent flag to print output of command only
 
 #### [v0.5.0] feat: Configure context via `~/.invoker/context`
+
+#### [v0.5.1] bugf: Handle code blocks with languages provided in completion response
