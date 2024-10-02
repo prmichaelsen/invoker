@@ -13,7 +13,7 @@ export const chatService = async (input: ChatServiceInput) => {
       temperature: 0,
       top_p: 0,
       top_k: 0,
-      max_tokens_to_sample: 1000,
+      max_tokens_to_sample: 200000,
       stop_sequences: ["[STOP]"],
     }),
     modelId: "anthropic.claude-v2",
@@ -27,5 +27,13 @@ export const chatService = async (input: ChatServiceInput) => {
   const result = JSON.parse(String(res.body)) as {
     completion: string;
   };
-  return result.completion.trim();
+  const completion = result.completion.trim();
+  const backTicks = "```";
+  const openBackTicksIdx = completion.indexOf(backTicks);
+  const closeBackTicksIdx = completion.lastIndexOf(backTicks);
+  if (openBackTicksIdx > -1 && closeBackTicksIdx > -1) {
+    return completion.substring(openBackTicksIdx + backTicks.length, closeBackTicksIdx).trim();
+  } else {
+    return completion;
+  }
 };
