@@ -49,8 +49,41 @@ If you aren't authenticated and authorized, Invoker will throw an error during u
 
 #### Usage
 
+##### Interactive Mode
 ```sh
 invoker
+Say Hi
+echo Hi
+Hi
+```
+
+Prompt to confirm before running:
+```sh
+invoker
+? Say Hi
+echo Hi (y/N)
+y
+Hi
+```
+
+#### Command Line Mode
+```sh
+invoker "Say Hi"
+echo Hi
+```
+
+Pipe output:
+```sh
+invoker "Say Hi" | sh
+Hi
+```
+
+Prompt to confirm before running:
+```sh
+invoker "? Say Hi"
+echo Hi (y/N)
+y
+Hi
 ```
 
 ## Demos
@@ -90,10 +123,12 @@ new commands along the way.
 
 ![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/6.gif?raw=true)
 
-Invoker's use cases are inummerable. You can automate the most trivial of tasks with
+Invoker's use cases are innumerable. You can automate the most trivial of tasks with
 very little effort.
 
 ![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/13.png?raw=true)
+
+![img](https://github.com/prmichaelsen/invoker/blob/mainline/images/15.png?raw=true)
 
 ## ⚠️ Warning
 
@@ -103,6 +138,6 @@ If you're not careful, Invoker can destroy your computer entirely.
 
 Use **extra caution** when executing any commands with side effects.
 
-Make sure to prefix input with `?` as neccessary.
+Make sure to prefix input with `?` as necessary.
 
 Use at your own risk.
