@@ -90,6 +90,20 @@ y
 Hi
 ```
 
+Run immediately:
+```sh
+invoker -f "Say Hi"
+echo Hi
+Hi
+```
+
+Run immediately and silently:
+```sh
+invoker -fs "Say Hi"
+Hi
+```
+
+
 ## Demos
 
 ### Hello World
@@ -145,3 +159,8 @@ Use **extra caution** when executing any commands with side effects.
 Make sure to prefix input with `?` as necessary.
 
 Use at your own risk.
+
+### Samples
+
+![image](https://github.com/user-attachments/assets/faf81a5f-4d35-4759-894f-f72532d3b361)
+
